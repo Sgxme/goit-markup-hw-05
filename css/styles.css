@@ -595,8 +595,8 @@ header {}
 .footer-form-field:focus {
     border-color: #31d0aa;
 }
-.btn-sub-text {
-    margin-right: 16px;
+.footer-btn-icon {
+    margin-left: 16px;
 }
 
 /* #endregion */
@@ -781,7 +781,8 @@ header {}
 }
 
 .feedback-agreement {
-    display: block;
+    display: inline-flex;
+    align-items: center;
     margin-bottom: 24px;
 
     color: rgba(64, 64, 64, 0.6);
