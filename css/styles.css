@@ -612,8 +612,7 @@ header {}
 
     background-color: rgb(46 47 66 / 40%);
 
-    transition-property: opacity, visibility;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     opacity: 0;
     visibility: hidden;
@@ -640,8 +639,7 @@ header {}
     border-radius: 4px;
     background-color: #fcfcfc;
 
-    transition-property: opacity, transform;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -691,7 +689,9 @@ header {}
     margin-bottom: 16px;
 }
 
-.feedback-form {}
+.feedback-form {
+    gap: 8px;
+}
 
 .feedback-wrapper {
     position: relative;
@@ -770,6 +770,10 @@ header {}
     outline: none;
     resize: none;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.feedback-wrapper-comment {
+    height: 138px;
 }
 
 .feedback-comment:focus {
